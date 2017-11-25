@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleDisplayName</key>
+	<string>{{cookiecutter.short_name}} Plugin</string>
+	<key>QSActions</key>
+	<dict>
+		<key>DoSomethingAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QS{{cookiecutter.short_name}}Action</string>
+			<key>actionSelector</key>
+			<string>performActionOnObject:</string>
+			<key>commandFormat</key>
+			<string>Do something to %@</string>
+			<key>directTypes</key>
+			<array>
+				<string>QS{{cookiecutter.short_name}}Type</string>
+			</array>
+			<key>displaysResult</key>
+			<false/>
+			<key>icon</key>
+			<string>Actions</string>
+			<key>name</key>
+			<string>Do Something</string>
+			<key>validatesObjects</key>
+			<false/>
+		</dict>
+		<key>DoSomethingUsingAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QS{{cookiecutter.short_name}}Action</string>
+			<key>actionSelector</key>
+			<string>performActionOnObject:using:</string>
+			<key>commandFormat</key>
+			<string>Do something to %@ using %@</string>
+			<key>directTypes</key>
+			<array>
+				<string>QS{{cookiecutter.short_name}}Type</string>
+			</array>
+			<key>displaysResult</key>
+			<false/>
+			<key>icon</key>
+			<string>Actions</string>
+			<key>indirectOptional</key>
+			<false/>
+			<key>indirectTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>name</key>
+			<string>Do Something Using…</string>
+			<key>validatesObjects</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>QSDefaultsTemplate</key>
+	<dict>
+		<key>{{cookiecutter.short_name}}EnableFeature</key>
+		<true/>
+	</dict>
+	<key>QSPlugIn</key>
+	<dict>
+		<key>author</key>
+		<string>{{cookiecutter.author}}</string>
+		<key>categories</key>
+		<array>
+			<string>TBD</string>
+		</array>
+		<key>description</key>
+		<string>{{cookiecutter.description}}</string>
+		<key>extendedDescription</key>
+		<string>&lt;h1&gt;{{cookiecutter.short_name}}&lt;/h1&gt;
+&lt;h2&gt;{{cookiecutter.description}}&lt;/h2&gt;
+&lt;p&gt;Documentatoin for {{cookiecutter.short_name}}&lt;/p&gt;</string>
+		<key>icon</key>
+		<string>QSPlugIn</string>
+	</dict>
+	<key>QSPresetAdditionsTemplate</key>
+	<array>
+		<dict>
+			<key>ID</key>
+			<string>QSPresetExample</string>
+			<key>enabled</key>
+			<true/>
+			<key>icon</key>
+			<string>QSPlugIn</string>
+			<key>name</key>
+			<string>Example Preset</string>
+			<key>settings</key>
+			<dict>
+				<key>path</key>
+				<string>/path/to/data</string>
+			</dict>
+			<key>source</key>
+			<string>QS{{cookiecutter.short_name}}Source</string>
+		</dict>
+	</array>
+	<key>QSRegistration</key>
+	<dict>
+		<key>QSActionProviders</key>
+		<dict>
+			<key>QS{{cookiecutter.short_name}}Action</key>
+			<string>QS{{cookiecutter.short_name}}Action</string>
+		</dict>
+		<key>QSObjectHandlers</key>
+		<dict>
+			<key>QS{{cookiecutter.short_name}}Type</key>
+			<string>QS{{cookiecutter.short_name}}Source</string>
+		</dict>
+		<key>QSObjectSources</key>
+		<dict>
+			<key>QS{{cookiecutter.short_name}}Source</key>
+			<string>QS{{cookiecutter.short_name}}Source</string>
+		</dict>
+		<key>QSTypeDefinitions</key>
+		<dict>
+			<key>QS{{cookiecutter.short_name}}Type</key>
+			<dict>
+				<key>icon</key>
+				<string>GenericDocumentIcon</string>
+				<key>name</key>
+				<string>{{cookiecutter.short_name}} Objects</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>QSRequirementsTemplate</key>
+	<dict>
+		<key>version</key>
+		<string>4012</string>
+	</dict>
+</dict>
+</plist>
