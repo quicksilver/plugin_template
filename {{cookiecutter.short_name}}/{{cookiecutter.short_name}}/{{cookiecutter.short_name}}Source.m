@@ -25,7 +25,7 @@
 	NSMutableArray *objects=[NSMutableArray arrayWithCapacity:1];
 	QSObject *newObject;
 	
-	newObject = [QSObject objectWithIdentifier:@"QS{{cookiecutter.short_name}}Test"];
+	newObject = [QSObject makeObjectWithIdentifier:@"QS{{cookiecutter.short_name}}Test"];
 	[newObject setName:@"Test {{cookiecutter.short_name}} Object"];
 	[newObject setObject:@"data" forType:QS{{cookiecutter.short_name}}Type];
 	[newObject setPrimaryType:QS{{cookiecutter.short_name}}Type];
