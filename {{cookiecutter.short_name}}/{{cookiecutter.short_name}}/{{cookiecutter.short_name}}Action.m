@@ -5,6 +5,7 @@
 //  Created by {{cookiecutter.author}}
 //
 
+#import "QS{{cookiecutter.short_name}}.h"
 #import "{{cookiecutter.short_name}}Action.h"
 
 @implementation QS{{cookiecutter.short_name}}Action
