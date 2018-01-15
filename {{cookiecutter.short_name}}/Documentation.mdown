@@ -2,4 +2,4 @@
 
 ## {{cookiecutter.description}} ##
 
-Documentatoin for {{cookiecutter.short_name}}
+Documentation for {{cookiecutter.short_name}}
