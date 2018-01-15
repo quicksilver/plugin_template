@@ -7,7 +7,7 @@
 
 #import "{{cookiecutter.short_name}}Action.h"
 
-@implementation QS{{cookiecutter.short_name}}ActionProvider
+@implementation QS{{cookiecutter.short_name}}Action
 
 #pragma mark Action Methods
 
