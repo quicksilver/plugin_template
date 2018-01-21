@@ -1,12 +1,12 @@
 //
 //  {{cookiecutter.short_name}} Plug-in
-//  {{cookiecutter.short_name}}Source.m
+//  QS{{cookiecutter.short_name}}Source.m
 //
 //  Created by {{cookiecutter.author}}
 //
 
 #import "QS{{cookiecutter.short_name}}.h"
-#import "{{cookiecutter.short_name}}Source.h"
+#import "QS{{cookiecutter.short_name}}Source.h"
 
 @implementation QS{{cookiecutter.short_name}}Source
 

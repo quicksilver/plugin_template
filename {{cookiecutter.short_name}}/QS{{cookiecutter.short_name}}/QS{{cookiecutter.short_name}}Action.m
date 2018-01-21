@@ -1,12 +1,12 @@
 //
 //  {{cookiecutter.short_name}} Plug-in
-//  {{cookiecutter.short_name}}Action.m
+//  QS{{cookiecutter.short_name}}Action.m
 //
 //  Created by {{cookiecutter.author}}
 //
 
 #import "QS{{cookiecutter.short_name}}.h"
-#import "{{cookiecutter.short_name}}Action.h"
+#import "QS{{cookiecutter.short_name}}Action.h"
 
 @implementation QS{{cookiecutter.short_name}}Action
 
