@@ -5,7 +5,7 @@
 //  Created by {{cookiecutter.author}}
 //
 
-@interface QS{{cookiecutter.short_name}}Action : QSAction
+@interface QS{{cookiecutter.short_name}}Action : QSActionProvider
 {
 }
 @end
