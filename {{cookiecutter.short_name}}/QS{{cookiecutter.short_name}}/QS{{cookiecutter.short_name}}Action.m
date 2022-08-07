@@ -26,21 +26,21 @@
 }
 
 // Call a method defined in QS{{cookiecutter.short_name}}.swift
-// Feel free to remove this method if not using Swift!
+// Please remove this method if not using Swift!
 - (QSObject *)performActionInSwiftFromObjC:(QSObject *)dObject
 {
-  Class providerClass = NSClassFromString(@"QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}Swift");
-  QS{{cookiecutter.short_name}}Swift* plugin = [[QS{{cookiecutter.short_name}}Swift alloc]init];
-  return [plugin doSomethingFromObjC:dObject];
+  Class providerClass = NSClassFromString(@"QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftAction");
+  QS{{cookiecutter.short_name}}SwiftAction* plugin = [[QS{{cookiecutter.short_name}}SwiftAction alloc]init];
+  return [plugin performSwiftActionFromObjC:dObject];
 }
 
 // Call a method defined in QS{{cookiecutter.short_name}}.swift also using the third pane
-// Feel free to remove this method if not using Swift!
+// Please remove this method if not using Swift!
 - (QSObject *)performActionInSwiftFromObjC:(QSObject *)dObject using:(QSObject *)iObject
 {
-  Class providerClass = NSClassFromString(@"QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}Swift");
-  QS{{cookiecutter.short_name}}Swift* plugin = [[QS{{cookiecutter.short_name}}Swift alloc]init];
-  return [plugin doSomethingFromObjC:dObject using:iObject];
+  Class providerClass = NSClassFromString(@"QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftAction");
+  QS{{cookiecutter.short_name}}SwiftAction* plugin = [[QS{{cookiecutter.short_name}}SwiftAction alloc]init];
+  return [plugin performSwiftActionFromObjC:dObject using:iObject];
 }
 
 #pragma mark Quicksilver Validation
