@@ -63,6 +63,7 @@
 			<false/>
 			<key>indirectTypes</key>
 			<array>
+				<string>QS{{cookiecutter.short_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>name</key>
@@ -80,6 +81,7 @@
 			<string>Do Something in Swift to %@</string>
 			<key>directTypes</key>
 			<array>
+				<string>QS{{cookiecutter.short_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
@@ -112,6 +114,7 @@
 			<false/>
 			<key>indirectTypes</key>
 			<array>
+				<string>QS{{cookiecutter.short_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>name</key>
@@ -129,6 +132,7 @@
 			<string>Do Something in Swift from ObjC to %@</string>
 			<key>directTypes</key>
 			<array>
+				<string>QS{{cookiecutter.short_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
@@ -161,6 +165,7 @@
 			<false/>
 			<key>indirectTypes</key>
 			<array>
+				<string>QS{{cookiecutter.short_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>name</key>
