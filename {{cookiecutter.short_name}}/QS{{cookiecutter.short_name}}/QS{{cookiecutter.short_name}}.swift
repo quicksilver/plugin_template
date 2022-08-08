@@ -21,14 +21,13 @@ class QS{{cookiecutter.short_name}}SwiftAction : QSActionProvider {
     }
 
     @objc func performSwiftActionOnObject(_ dObject: QSObject, using iObject: QSObject) -> QSObject {
-        print("Performing a Swift action with direct obj only")
+        print("Performing a Swift action with direct and indirect objects")
         return QSObject(string: "there it went!")
     }
 
     // Please see the below method in QS{{cookiecutter.short_name}}Action.m
     // - (QSObject *)performActionInSwiftFromObjC:(QSObject *)dObject
     @objc func performSwiftActionFromObjC(_ dObject: QSObject) -> QSObject {
-
         print("Performing a Swift action from ObjC with direct obj only")
         return QSObject(string: "here it comes!")
     }
