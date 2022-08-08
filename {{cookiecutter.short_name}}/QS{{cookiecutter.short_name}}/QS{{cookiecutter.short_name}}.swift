@@ -69,7 +69,8 @@ class QS{{cookiecutter.short_name}}SwiftSource : QSObjectSource {
     }
 
     // create and return an array of QSObjects to add to the catalog
-    //    - (NSArray *) objectsForEntry:(NSDictionary *)theEntry
+    // Run `Force Catalog Rescan` and afterwards `Example Swift Preset` should
+    // appear in Catalog -> Plugins, with 1 entry
     @objc func objectsForEntry(_ theEntry: NSDictionary) -> [QSObject] {
         print("here sourcing stuff");
 
