@@ -31,6 +31,7 @@
 			<key>directTypes</key>
 			<array>
 				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
 			<false/>
@@ -52,6 +53,7 @@
 			<key>directTypes</key>
 			<array>
 				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
 			<false/>
@@ -100,7 +102,6 @@
 			<key>directTypes</key>
 			<array>
 				<string>QS{{cookiecutter.short_name}}Type</string>
-				<string>QSTextType</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
@@ -150,7 +151,6 @@
 			<key>directTypes</key>
 			<array>
 				<string>QS{{cookiecutter.short_name}}Type</string>
-				<string>QSTextType</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
