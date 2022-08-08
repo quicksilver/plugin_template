@@ -35,7 +35,6 @@ class QS{{cookiecutter.short_name}}SwiftAction : QSActionProvider {
     // Please see the below method in QS{{cookiecutter.short_name}}Action.m
     // - (QSObject *)performActionInSwiftFromObjC:(QSObject *)dObject using:(QSObject *)iObject
     @objc func performSwiftActionFromObjC(_ dObject: QSObject, using iObject: QSObject) -> QSObject {
-
         print("Performing a Swift action from ObjC with direct and indirect objects")
         return QSObject(string: "there it went!")
     }
