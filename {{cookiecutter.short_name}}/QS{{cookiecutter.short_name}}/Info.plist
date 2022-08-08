@@ -215,6 +215,23 @@
 			<key>source</key>
 			<string>QS{{cookiecutter.short_name}}Source</string>
 		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSPresetSwiftExample</string>
+			<key>enabled</key>
+			<true/>
+			<key>icon</key>
+			<string>QSPlugIn</string>
+			<key>name</key>
+			<string>Example Swift Preset</string>
+			<key>settings</key>
+			<dict>
+				<key>path</key>
+				<string>/path/to/data</string>
+			</dict>
+			<key>source</key>
+			<string>QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftSource</string>
+		</dict>
 	</array>
 	<key>QSRegistration</key>
 	<dict>
