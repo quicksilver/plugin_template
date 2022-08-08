@@ -196,7 +196,7 @@
 		<key>icon</key>
 		<string>QSPlugIn</string>
 	</dict>
-	<key>QSPresetAdditionsTemplate</key>
+	<key>QSPresetAdditions</key>
 	<array>
 		<dict>
 			<key>ID</key>
