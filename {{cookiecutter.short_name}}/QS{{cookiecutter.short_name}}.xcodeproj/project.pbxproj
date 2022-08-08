@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4EF80261FC9004F0025F5EA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		606D3146289F600F00A76A21 /* QS{{cookiecutter.short_name}}.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QS{{cookiecutter.short_name}}.h; sourceTree = "<group>"; };
 		608539A027D15DA2004EE149 /* QS{{cookiecutter.short_name}}-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QS{{cookiecutter.short_name}}-Bridging-Header.h"; sourceTree = "<group>"; };
 		608539A127D15DA2004EE149 /* QS{{cookiecutter.short_name}}.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QS{{cookiecutter.short_name}}.swift; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		D46888941FC903AC00797047 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		D46888951FC903AC00797047 /* Quicksilver.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
 		D46888961FC903AC00797047 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
-		D4EF80261FC9004F0025F5EA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
