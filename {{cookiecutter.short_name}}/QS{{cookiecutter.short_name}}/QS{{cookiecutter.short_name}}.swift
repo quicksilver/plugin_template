@@ -74,15 +74,7 @@ class QS{{cookiecutter.short_name}}SwiftSource : QSObjectSource {
     @objc func objectsForEntry(_ theEntry: NSDictionary) -> [QSObject] {
         print("here sourcing stuff");
 
-//        var newObject = QSObject(type: "QS{{cookiecutter.short_name}}Test", value: <#T##Any!#>, name: "Test {{cookiecutter.short_name}} Swifty Object")
         let newObject = QSObject(type: "QS{{cookiecutter.short_name}}Type", value: "this is my value!", name: "Test {{cookiecutter.short_name}} Swifty Object")!
-        let anotherObject = QS{{cookiecutter.short_name}}Type        
-//        newObject = [QSObject makeObjectWithIdentifier:@"QS{{cookiecutter.short_name}}Test"];
-//        [newObject setName:@"Test {{cookiecutter.short_name}} Object"];
-//        [newObject setObject:@"data" forType:QS{{cookiecutter.short_name}}Type];
-//        [newObject setPrimaryType:QS{{cookiecutter.short_name}}Type];
-//        [objects addObject:newObject];
-
         return [newObject]
     }
 

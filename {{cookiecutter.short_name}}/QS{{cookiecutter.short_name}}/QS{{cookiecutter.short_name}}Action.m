@@ -29,7 +29,6 @@
 // Please remove this method if not using Swift!
 - (QSObject *)performActionInSwiftFromObjC:(QSObject *)dObject
 {
-  Class providerClass = NSClassFromString(@"QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftAction");
   QS{{cookiecutter.short_name}}SwiftAction* plugin = [[QS{{cookiecutter.short_name}}SwiftAction alloc]init];
   return [plugin performSwiftActionFromObjC:dObject];
 }
@@ -38,7 +37,6 @@
 // Please remove this method if not using Swift!
 - (QSObject *)performActionInSwiftFromObjC:(QSObject *)dObject using:(QSObject *)iObject
 {
-  Class providerClass = NSClassFromString(@"QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftAction");
   QS{{cookiecutter.short_name}}SwiftAction* plugin = [[QS{{cookiecutter.short_name}}SwiftAction alloc]init];
   return [plugin performSwiftActionFromObjC:dObject using:iObject];
 }
