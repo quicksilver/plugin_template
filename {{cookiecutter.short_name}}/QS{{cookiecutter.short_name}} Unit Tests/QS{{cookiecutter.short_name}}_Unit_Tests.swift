@@ -8,7 +8,7 @@
 
 import XCTest
 
-@testable import QS{{cookiecutter.short_name}}
+import QS{{cookiecutter.short_name}}
 
 class QS{{cookiecutter.short_name}}_Unit_Tests: XCTestCase {
 
