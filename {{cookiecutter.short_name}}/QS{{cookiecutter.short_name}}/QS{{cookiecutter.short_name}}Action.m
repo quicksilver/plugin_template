@@ -7,6 +7,7 @@
 
 #import "QS{{cookiecutter.short_name}}.h"
 #import "QS{{cookiecutter.short_name}}Action.h"
+#import <QS{{cookiecutter.short_name}}-Swift.h>
 
 @implementation QS{{cookiecutter.short_name}}Action
 
@@ -22,6 +23,22 @@
 - (QSObject *)performActionOnObject:(QSObject *)dObject using:(QSObject *)iObject
 {
 	return nil;
+}
+
+// Call a method defined in QS{{cookiecutter.short_name}}.swift
+// Please remove this method if not using Swift!
+- (QSObject *)performActionInSwiftFromObjC:(QSObject *)dObject
+{
+  QS{{cookiecutter.short_name}}SwiftAction* plugin = [[QS{{cookiecutter.short_name}}SwiftAction alloc]init];
+  return [plugin performSwiftActionFromObjC:dObject];
+}
+
+// Call a method defined in QS{{cookiecutter.short_name}}.swift also using the third pane
+// Please remove this method if not using Swift!
+- (QSObject *)performActionInSwiftFromObjC:(QSObject *)dObject using:(QSObject *)iObject
+{
+  QS{{cookiecutter.short_name}}SwiftAction* plugin = [[QS{{cookiecutter.short_name}}SwiftAction alloc]init];
+  return [plugin performSwiftActionFromObjC:dObject using:iObject];
 }
 
 #pragma mark Quicksilver Validation

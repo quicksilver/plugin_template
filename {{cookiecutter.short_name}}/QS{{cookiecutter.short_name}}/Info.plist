@@ -31,6 +31,7 @@
 			<key>directTypes</key>
 			<array>
 				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
 			<false/>
@@ -52,6 +53,7 @@
 			<key>directTypes</key>
 			<array>
 				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
 			<false/>
@@ -61,10 +63,113 @@
 			<false/>
 			<key>indirectTypes</key>
 			<array>
+				<string>QS{{cookiecutter.short_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>name</key>
 			<string>Do Something Using…</string>
+			<key>validatesObjects</key>
+			<false/>
+		</dict>
+		<key>DoSomethingInSwiftAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftAction</string>
+			<key>actionSelector</key>
+			<string>performSwiftActionOnObject:</string>
+			<key>commandFormat</key>
+			<string>Do Something in Swift to %@</string>
+			<key>directTypes</key>
+			<array>
+				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>displaysResult</key>
+			<false/>
+			<key>icon</key>
+			<string>Actions</string>
+			<key>name</key>
+			<string>Do Something in Swift</string>
+			<key>validatesObjects</key>
+			<false/>
+		</dict>
+		<key>DoSomethingInSwiftUsingAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftAction</string>
+			<key>actionSelector</key>
+			<string>performSwiftActionOnObject:using:</string>
+			<key>commandFormat</key>
+			<string>Do something in Swift to %@ using %@</string>
+			<key>directTypes</key>
+			<array>
+				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>displaysResult</key>
+			<false/>
+			<key>icon</key>
+			<string>Actions</string>
+			<key>indirectOptional</key>
+			<false/>
+			<key>indirectTypes</key>
+			<array>
+				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>name</key>
+			<string>Do Something in Swift Using…</string>
+			<key>validatesObjects</key>
+			<false/>
+		</dict>
+		<key>DoSomethingInSwiftFromObjCAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftAction</string>
+			<key>actionSelector</key>
+			<string>performSwiftActionFromObjC:</string>
+			<key>commandFormat</key>
+			<string>Do Something in Swift from ObjC to %@</string>
+			<key>directTypes</key>
+			<array>
+				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>displaysResult</key>
+			<false/>
+			<key>icon</key>
+			<string>Actions</string>
+			<key>name</key>
+			<string>Do Something in Swift from ObjC</string>
+			<key>validatesObjects</key>
+			<false/>
+		</dict>
+		<key>DoSomethingInSwiftFromObjCUsingAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftAction</string>
+			<key>actionSelector</key>
+			<string>performSwiftActionFromObjC:using:</string>
+			<key>commandFormat</key>
+			<string>Do something in Swift from ObjC to %@ using %@</string>
+			<key>directTypes</key>
+			<array>
+				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>displaysResult</key>
+			<false/>
+			<key>icon</key>
+			<string>Actions</string>
+			<key>indirectOptional</key>
+			<false/>
+			<key>indirectTypes</key>
+			<array>
+				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>name</key>
+			<string>Do Something in Swift from ObjC Using…</string>
 			<key>validatesObjects</key>
 			<false/>
 		</dict>
@@ -87,11 +192,11 @@
 		<key>extendedDescription</key>
 		<string>&lt;h1&gt;{{cookiecutter.short_name}}&lt;/h1&gt;
 &lt;h2&gt;{{cookiecutter.description}}&lt;/h2&gt;
-&lt;p&gt;Documentatoin for {{cookiecutter.short_name}}&lt;/p&gt;</string>
+&lt;p&gt;Documentation for {{cookiecutter.short_name}}&lt;/p&gt;</string>
 		<key>icon</key>
 		<string>QSPlugIn</string>
 	</dict>
-	<key>QSPresetAdditionsTemplate</key>
+	<key>QSPresetAdditions</key>
 	<array>
 		<dict>
 			<key>ID</key>
@@ -109,6 +214,23 @@
 			</dict>
 			<key>source</key>
 			<string>QS{{cookiecutter.short_name}}Source</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSPresetSwiftExample</string>
+			<key>enabled</key>
+			<true/>
+			<key>icon</key>
+			<string>QSPlugIn</string>
+			<key>name</key>
+			<string>Example Swift Preset</string>
+			<key>settings</key>
+			<dict>
+				<key>path</key>
+				<string>/path/to/data</string>
+			</dict>
+			<key>source</key>
+			<string>QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftSource</string>
 		</dict>
 	</array>
 	<key>QSRegistration</key>
