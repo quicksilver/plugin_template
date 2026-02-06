@@ -1,5 +1,8 @@
 {
-  "short_name": "MyNewPlugin",
-  "author": "Your Name",
-  "description": "One line description of the plug-in"
+  "plugin_name": null,
+  "author": null,
+  "description": null,
+  "__prompts__": {
+    "plugin_name": "Plugin Name (strongly suggested to use 'QS' prefix, e.g. 'QSMyNewPlugin'):"
+  }
 }

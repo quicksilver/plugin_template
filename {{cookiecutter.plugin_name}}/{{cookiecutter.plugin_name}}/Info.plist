@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.qsapp.{{cookiecutter.short_name}}Plugin</string>
+	<string>com.qsapp.{{cookiecutter.plugin_name}}Plugin</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -17,20 +17,20 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>CFBundleDisplayName</key>
-	<string>{{cookiecutter.short_name}} Plugin</string>
+	<string>{{cookiecutter.plugin_name}} Plugin</string>
 	<key>QSActions</key>
 	<dict>
 		<key>DoSomethingAction</key>
 		<dict>
 			<key>actionClass</key>
-			<string>QS{{cookiecutter.short_name}}Action</string>
+			<string>{{cookiecutter.plugin_name}}Action</string>
 			<key>actionSelector</key>
 			<string>performActionOnObject:</string>
 			<key>commandFormat</key>
 			<string>Do something to %@</string>
 			<key>directTypes</key>
 			<array>
-				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>{{cookiecutter.plugin_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
@@ -45,14 +45,14 @@
 		<key>DoSomethingUsingAction</key>
 		<dict>
 			<key>actionClass</key>
-			<string>QS{{cookiecutter.short_name}}Action</string>
+			<string>{{cookiecutter.plugin_name}}Action</string>
 			<key>actionSelector</key>
 			<string>performActionOnObject:using:</string>
 			<key>commandFormat</key>
 			<string>Do something to %@ using %@</string>
 			<key>directTypes</key>
 			<array>
-				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>{{cookiecutter.plugin_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
@@ -63,7 +63,7 @@
 			<false/>
 			<key>indirectTypes</key>
 			<array>
-				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>{{cookiecutter.plugin_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>name</key>
@@ -74,14 +74,14 @@
 		<key>DoSomethingInSwiftAction</key>
 		<dict>
 			<key>actionClass</key>
-			<string>QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftAction</string>
+			<string>{{cookiecutter.plugin_name}}.{{cookiecutter.plugin_name}}SwiftAction</string>
 			<key>actionSelector</key>
 			<string>performSwiftActionOnObject:</string>
 			<key>commandFormat</key>
 			<string>Do Something in Swift to %@</string>
 			<key>directTypes</key>
 			<array>
-				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>{{cookiecutter.plugin_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
@@ -96,14 +96,14 @@
 		<key>DoSomethingInSwiftUsingAction</key>
 		<dict>
 			<key>actionClass</key>
-			<string>QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftAction</string>
+			<string>{{cookiecutter.plugin_name}}.{{cookiecutter.plugin_name}}SwiftAction</string>
 			<key>actionSelector</key>
 			<string>performSwiftActionOnObject:using:</string>
 			<key>commandFormat</key>
 			<string>Do something in Swift to %@ using %@</string>
 			<key>directTypes</key>
 			<array>
-				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>{{cookiecutter.plugin_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
@@ -114,7 +114,7 @@
 			<false/>
 			<key>indirectTypes</key>
 			<array>
-				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>{{cookiecutter.plugin_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>name</key>
@@ -125,14 +125,14 @@
 		<key>DoSomethingInSwiftFromObjCAction</key>
 		<dict>
 			<key>actionClass</key>
-			<string>QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftAction</string>
+			<string>{{cookiecutter.plugin_name}}.{{cookiecutter.plugin_name}}SwiftAction</string>
 			<key>actionSelector</key>
 			<string>performSwiftActionFromObjC:</string>
 			<key>commandFormat</key>
 			<string>Do Something in Swift from ObjC to %@</string>
 			<key>directTypes</key>
 			<array>
-				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>{{cookiecutter.plugin_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
@@ -147,14 +147,14 @@
 		<key>DoSomethingInSwiftFromObjCUsingAction</key>
 		<dict>
 			<key>actionClass</key>
-			<string>QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftAction</string>
+			<string>{{cookiecutter.plugin_name}}.{{cookiecutter.plugin_name}}SwiftAction</string>
 			<key>actionSelector</key>
 			<string>performSwiftActionFromObjC:using:</string>
 			<key>commandFormat</key>
 			<string>Do something in Swift from ObjC to %@ using %@</string>
 			<key>directTypes</key>
 			<array>
-				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>{{cookiecutter.plugin_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
@@ -165,7 +165,7 @@
 			<false/>
 			<key>indirectTypes</key>
 			<array>
-				<string>QS{{cookiecutter.short_name}}Type</string>
+				<string>{{cookiecutter.plugin_name}}Type</string>
 				<string>NSStringPboardType</string>
 			</array>
 			<key>name</key>
@@ -176,7 +176,7 @@
 	</dict>
 	<key>QSDefaultsTemplate</key>
 	<dict>
-		<key>{{cookiecutter.short_name}}EnableFeature</key>
+		<key>{{cookiecutter.plugin_name}}EnableFeature</key>
 		<true/>
 	</dict>
 	<key>QSPlugIn</key>
@@ -190,9 +190,9 @@
 		<key>description</key>
 		<string>{{cookiecutter.description}}</string>
 		<key>extendedDescription</key>
-		<string>&lt;h1&gt;{{cookiecutter.short_name}}&lt;/h1&gt;
+		<string>&lt;h1&gt;{{cookiecutter.plugin_name}}&lt;/h1&gt;
 &lt;h2&gt;{{cookiecutter.description}}&lt;/h2&gt;
-&lt;p&gt;Documentation for {{cookiecutter.short_name}}&lt;/p&gt;</string>
+&lt;p&gt;Documentation for {{cookiecutter.plugin_name}}&lt;/p&gt;</string>
 		<key>icon</key>
 		<string>QSPlugIn</string>
 	</dict>
@@ -213,7 +213,7 @@
 				<string>/path/to/data</string>
 			</dict>
 			<key>source</key>
-			<string>QS{{cookiecutter.short_name}}Source</string>
+			<string>{{cookiecutter.plugin_name}}Source</string>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -230,34 +230,34 @@
 				<string>/path/to/data</string>
 			</dict>
 			<key>source</key>
-			<string>QS{{cookiecutter.short_name}}.QS{{cookiecutter.short_name}}SwiftSource</string>
+			<string>{{cookiecutter.plugin_name}}.{{cookiecutter.plugin_name}}SwiftSource</string>
 		</dict>
 	</array>
 	<key>QSRegistration</key>
 	<dict>
 		<key>QSActionProviders</key>
 		<dict>
-			<key>QS{{cookiecutter.short_name}}Action</key>
-			<string>QS{{cookiecutter.short_name}}Action</string>
+			<key>{{cookiecutter.plugin_name}}Action</key>
+			<string>{{cookiecutter.plugin_name}}Action</string>
 		</dict>
 		<key>QSObjectHandlers</key>
 		<dict>
-			<key>QS{{cookiecutter.short_name}}Type</key>
-			<string>QS{{cookiecutter.short_name}}Source</string>
+			<key>{{cookiecutter.plugin_name}}Type</key>
+			<string>{{cookiecutter.plugin_name}}Source</string>
 		</dict>
 		<key>QSObjectSources</key>
 		<dict>
-			<key>QS{{cookiecutter.short_name}}Source</key>
-			<string>QS{{cookiecutter.short_name}}Source</string>
+			<key>{{cookiecutter.plugin_name}}Source</key>
+			<string>{{cookiecutter.plugin_name}}Source</string>
 		</dict>
 		<key>QSTypeDefinitions</key>
 		<dict>
-			<key>QS{{cookiecutter.short_name}}Type</key>
+			<key>{{cookiecutter.plugin_name}}Type</key>
 			<dict>
 				<key>icon</key>
 				<string>GenericDocumentIcon</string>
 				<key>name</key>
-				<string>{{cookiecutter.short_name}} Objects</string>
+				<string>{{cookiecutter.plugin_name}} Objects</string>
 			</dict>
 		</dict>
 	</dict>

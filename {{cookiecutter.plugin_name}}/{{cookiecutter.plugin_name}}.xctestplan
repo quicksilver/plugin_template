@@ -14,9 +14,9 @@
   "testTargets" : [
     {
       "target" : {
-        "containerPath" : "container:QS{{cookiecutter.short_name}}.xcodeproj",
+        "containerPath" : "container:{{cookiecutter.plugin_name}}.xcodeproj",
         "identifier" : "603AE8EE28CE5ED700C67DD0",
-        "name" : "QS{{cookiecutter.short_name}} Unit Tests"
+        "name" : "{{cookiecutter.plugin_name}} Unit Tests"
       }
     }
   ],

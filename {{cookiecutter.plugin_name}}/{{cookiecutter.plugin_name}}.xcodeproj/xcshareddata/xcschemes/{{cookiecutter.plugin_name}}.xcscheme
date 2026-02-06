@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D434B7701FC8FFC7007AF9C3"
-               BuildableName = "QS{{cookiecutter.short_name}}.qsplugin"
-               BlueprintName = "QS{{cookiecutter.short_name}}"
-               ReferencedContainer = "container:QS{{cookiecutter.short_name}}.xcodeproj">
+               BuildableName = "{{cookiecutter.plugin_name}}.qsplugin"
+               BlueprintName = "{{cookiecutter.plugin_name}}"
+               ReferencedContainer = "container:{{cookiecutter.plugin_name}}.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:QS{{cookiecutter.short_name}}.xctestplan"
+            reference = "container:{{cookiecutter.plugin_name}}.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -59,9 +59,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D434B7701FC8FFC7007AF9C3"
-            BuildableName = "QS{{cookiecutter.short_name}}.qsplugin"
-            BlueprintName = "QS{{cookiecutter.short_name}}"
-            ReferencedContainer = "container:QS{{cookiecutter.short_name}}.xcodeproj">
+            BuildableName = "{{cookiecutter.plugin_name}}.qsplugin"
+            BlueprintName = "{{cookiecutter.plugin_name}}"
+            ReferencedContainer = "container:{{cookiecutter.plugin_name}}.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
