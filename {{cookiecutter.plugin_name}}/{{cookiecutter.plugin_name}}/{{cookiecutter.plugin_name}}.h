@@ -1,6 +1,6 @@
 //
-//  {{cookiecutter.short_name}}Source.h
-//  {{cookiecutter.short_name}}
+//  {{cookiecutter.plugin_name}}Source.h
+//  {{cookiecutter.plugin_name}}
 //
 //  Created by {{cookiecutter.author}}
 //
@@ -11,4 +11,4 @@
 */
 
 // QSObject types for this plug-in
-#define QS{{cookiecutter.short_name}}Type @"QS{{cookiecutter.short_name}}Type"
+#define {{cookiecutter.plugin_name}}Type @"{{cookiecutter.plugin_name}}Type"

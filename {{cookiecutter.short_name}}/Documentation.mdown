@@ -1,5 +1,0 @@
-# {{cookiecutter.short_name}} #
-
-## {{cookiecutter.description}} ##
-
-Documentation for {{cookiecutter.short_name}}

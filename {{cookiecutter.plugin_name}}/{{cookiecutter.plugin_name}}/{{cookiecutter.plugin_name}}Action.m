@@ -1,15 +1,15 @@
 //
-//  {{cookiecutter.short_name}} Plug-in
-//  QS{{cookiecutter.short_name}}Action.m
+//  {{cookiecutter.plugin_name}} Plug-in
+//  {{cookiecutter.plugin_name}}Action.m
 //
 //  Created by {{cookiecutter.author}}
 //
 
-#import "QS{{cookiecutter.short_name}}.h"
-#import "QS{{cookiecutter.short_name}}Action.h"
-#import <QS{{cookiecutter.short_name}}-Swift.h>
+#import "{{cookiecutter.plugin_name}}.h"
+#import "{{cookiecutter.plugin_name}}Action.h"
+#import <{{cookiecutter.plugin_name}}-Swift.h>
 
-@implementation QS{{cookiecutter.short_name}}Action
+@implementation {{cookiecutter.plugin_name}}Action
 
 #pragma mark Action Methods
 
@@ -25,19 +25,19 @@
 	return nil;
 }
 
-// Call a method defined in QS{{cookiecutter.short_name}}.swift
+// Call a method defined in {{cookiecutter.plugin_name}}.swift
 // Please remove this method if not using Swift!
 - (QSObject *)performActionInSwiftFromObjC:(QSObject *)dObject
 {
-  QS{{cookiecutter.short_name}}SwiftAction* plugin = [[QS{{cookiecutter.short_name}}SwiftAction alloc]init];
+  {{cookiecutter.plugin_name}}SwiftAction* plugin = [[{{cookiecutter.plugin_name}}SwiftAction alloc]init];
   return [plugin performSwiftActionFromObjC:dObject];
 }
 
-// Call a method defined in QS{{cookiecutter.short_name}}.swift also using the third pane
+// Call a method defined in {{cookiecutter.plugin_name}}.swift also using the third pane
 // Please remove this method if not using Swift!
 - (QSObject *)performActionInSwiftFromObjC:(QSObject *)dObject using:(QSObject *)iObject
 {
-  QS{{cookiecutter.short_name}}SwiftAction* plugin = [[QS{{cookiecutter.short_name}}SwiftAction alloc]init];
+  {{cookiecutter.plugin_name}}SwiftAction* plugin = [[{{cookiecutter.plugin_name}}SwiftAction alloc]init];
   return [plugin performSwiftActionFromObjC:dObject using:iObject];
 }
 

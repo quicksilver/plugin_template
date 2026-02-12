@@ -1,14 +1,14 @@
 //
-//  {{cookiecutter.short_name}} Plug-in
-//  QS{{cookiecutter.short_name}}Source.m
+//  {{cookiecutter.plugin_name}} Plug-in
+//  {{cookiecutter.plugin_name}}Source.m
 //
 //  Created by {{cookiecutter.author}}
 //
 
-#import "QS{{cookiecutter.short_name}}.h"
-#import "QS{{cookiecutter.short_name}}Source.h"
+#import "{{cookiecutter.plugin_name}}.h"
+#import "{{cookiecutter.plugin_name}}Source.h"
 
-@implementation QS{{cookiecutter.short_name}}Source
+@implementation {{cookiecutter.plugin_name}}Source
 
 #pragma mark Catalog Entry Methods
 
@@ -26,10 +26,10 @@
 	NSMutableArray *objects=[NSMutableArray arrayWithCapacity:1];
 	QSObject *newObject;
 	
-	newObject = [QSObject makeObjectWithIdentifier:@"QS{{cookiecutter.short_name}}Test"];
-	[newObject setName:@"Test {{cookiecutter.short_name}} Object"];
-	[newObject setObject:@"data" forType:QS{{cookiecutter.short_name}}Type];
-	[newObject setPrimaryType:QS{{cookiecutter.short_name}}Type];
+	newObject = [QSObject makeObjectWithIdentifier:@"{{cookiecutter.plugin_name}}Test"];
+	[newObject setName:@"Test {{cookiecutter.plugin_name}} Object"];
+	[newObject setObject:@"data" forType:{{cookiecutter.plugin_name}}Type];
+	[newObject setPrimaryType:{{cookiecutter.plugin_name}}Type];
 	[objects addObject:newObject];
 
 	return objects;
@@ -47,7 +47,7 @@
 // a nicer or more "correct" icon that takes a while to create or obtain
 - (BOOL)loadIconForObject:(QSObject *)object
 {
-	id data=[object objectForType:QS{{cookiecutter.short_name}}Type];
+	id data=[object objectForType:{{cookiecutter.plugin_name}}Type];
 	[object setIcon:nil];
 	return YES;
 }

@@ -1,11 +1,11 @@
-//  QS{{cookiecutter.short_name}}.swift
-//  QS{{cookiecutter.short_name}}
+//  {{cookiecutter.plugin_name}}.swift
+//  {{cookiecutter.plugin_name}}
 //
 //  Created by {{cookiecutter.author}}
 
 //
-//  QS{{cookiecutter.short_name}}.swift
-//  QS{{cookiecutter.short_name}}
+//  {{cookiecutter.plugin_name}}.swift
+//  {{cookiecutter.plugin_name}}
 //
 //  Created by Nathan Henrie on 2022-03-03.
 //  Copyright © 2022 Quicksilver. All rights reserved.
@@ -14,7 +14,7 @@
 //import Foundation
 //import Cocoa
 
-class QS{{cookiecutter.short_name}}SwiftAction : QSActionProvider {
+class {{cookiecutter.plugin_name}}SwiftAction : QSActionProvider {
     @objc func performSwiftActionOnObject(_ dObject: QSObject) -> QSObject {
         print("Performing a Swift action with direct obj only")
         return QSObject(string: "here it comes!")
@@ -25,14 +25,14 @@ class QS{{cookiecutter.short_name}}SwiftAction : QSActionProvider {
         return QSObject(string: "there it went!")
     }
 
-    // Please see the below method in QS{{cookiecutter.short_name}}Action.m
+    // Please see the below method in {{cookiecutter.plugin_name}}Action.m
     // - (QSObject *)performActionInSwiftFromObjC:(QSObject *)dObject
     @objc func performSwiftActionFromObjC(_ dObject: QSObject) -> QSObject {
         print("Performing a Swift action from ObjC with direct obj only")
         return QSObject(string: "here it comes!")
     }
 
-    // Please see the below method in QS{{cookiecutter.short_name}}Action.m
+    // Please see the below method in {{cookiecutter.plugin_name}}Action.m
     // - (QSObject *)performActionInSwiftFromObjC:(QSObject *)dObject using:(QSObject *)iObject
     @objc func performSwiftActionFromObjC(_ dObject: QSObject, using iObject: QSObject) -> QSObject {
         print("Performing a Swift action from ObjC with direct and indirect objects")
@@ -60,8 +60,8 @@ class QS{{cookiecutter.short_name}}SwiftAction : QSActionProvider {
     }
 }
 
-    // Please see the below method in QS{{cookiecutter.short_name}}Action.m
-class QS{{cookiecutter.short_name}}SwiftSource : QSObjectSource {
+    // Please see the below method in {{cookiecutter.plugin_name}}Action.m
+class {{cookiecutter.plugin_name}}SwiftSource : QSObjectSource {
 //    - (BOOL)indexIsValidFromDate:(NSDate *)indexDate forEntry:(NSDictionary *)theEntry
     @objc func indexIsValidFromDate(_ indexDate: NSDate, forEntry theEntry: NSDictionary) -> Bool {
         print("checking that index");
@@ -74,7 +74,7 @@ class QS{{cookiecutter.short_name}}SwiftSource : QSObjectSource {
     @objc func objectsForEntry(_ theEntry: NSDictionary) -> [QSObject] {
         print("here sourcing stuff");
 
-        let newObject = QSObject(type: "QS{{cookiecutter.short_name}}Type", value: "this is my value!", name: "Test {{cookiecutter.short_name}} Swifty Object")!
+        let newObject = QSObject(type: "{{cookiecutter.plugin_name}}Type", value: "this is my value!", name: "Test {{cookiecutter.plugin_name}} Swifty Object")!
         return [newObject]
     }
 
@@ -88,7 +88,7 @@ class QS{{cookiecutter.short_name}}SwiftSource : QSObjectSource {
      // a nicer or more "correct" icon that takes a while to create or obtain
      - (BOOL)loadIconForObject:(QSObject *)object
      {
-     id data=[object objectForType:QS{{cookiecutter.short_name}}Type];
+     id data=[object objectForType:{{cookiecutter.plugin_name}}Type];
      [object setIcon:nil];
      return YES;
      }

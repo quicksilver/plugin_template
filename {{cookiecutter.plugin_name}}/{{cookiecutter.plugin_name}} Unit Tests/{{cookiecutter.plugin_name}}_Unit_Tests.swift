@@ -1,6 +1,6 @@
 //
-//  QS{{cookiecutter.short_name}}_Unit_Tests.swift
-//  QS{{cookiecutter.short_name}} Unit Tests
+//  {{cookiecutter.plugin_name}}_Unit_Tests.swift
+//  {{cookiecutter.plugin_name}} Unit Tests
 //
 //  Created by Nathan Henrie on 2022-09-11.
 //  Copyright © 2022 Quicksilver. All rights reserved.
@@ -8,9 +8,9 @@
 
 import XCTest
 
-import QS{{cookiecutter.short_name}}
+import {{cookiecutter.plugin_name}}
 
-class QS{{cookiecutter.short_name}}_Unit_Tests: XCTestCase {
+class {{cookiecutter.plugin_name}}_Unit_Tests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,7 +21,7 @@ class QS{{cookiecutter.short_name}}_Unit_Tests: XCTestCase {
     }
 
     func testExample() throws {
-        let action = QS{{cookiecutter.short_name}}SwiftAction()
+        let action = {{cookiecutter.plugin_name}}SwiftAction()
         let result = action.performSwiftActionOnObject(QSObject(string:"example input")!)
         XCTAssertEqual(result, QSObject(string:"here it comes!")!)
         // This is an example of a functional test case.
