@@ -5,7 +5,7 @@ on:
   pull_request:
 
 jobs:
-  build-qs:
+  test-template:
     runs-on: macos-latest
     env:
       QS_SOURCE_ROOT: /tmp/git/quicksilver
@@ -21,17 +21,10 @@ jobs:
           git clone --recurse-submodules --branch="${latest_tag}" --depth=1 https://github.com/quicksilver/Quicksilver.git "${QS_SOURCE_ROOT}"
 
           pushd "${QS_SOURCE_ROOT}/Quicksilver"
-          ./Tools/qsrelease Debug
-
-  template-plugin:
-    runs-on: macos-latest
-    needs: build-qs
-    steps:
+          ./Tools/qsrelease "${CONFIGURATION}"
       - uses: actions/checkout@v4
       - run: |
           set -x
-
-          pwd
 
           python -m pip install --user cookiecutter
 
