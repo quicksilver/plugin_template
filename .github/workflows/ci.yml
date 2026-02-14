@@ -39,11 +39,11 @@ jobs:
           python -m cookiecutter \
             --no-input \
             "${OLDPWD}" \
-            plugin_name=MyPlugin \
+            plugin_name=QSMyPlugin \
             author="Nathan Henrie" \
             description="test plugin for CI"
 
-          pushd QSMyNewPlugin
+          pushd QSMyPlugin
 
           xcodebuild -scheme QSMyPlugin build
           xcodebuild -scheme QSMyPlugin test
