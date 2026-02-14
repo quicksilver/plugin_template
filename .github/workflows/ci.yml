@@ -21,7 +21,7 @@ jobs:
           git clone --recurse-submodules --branch="${latest_tag}" --depth=1 https://github.com/quicksilver/Quicksilver.git "${QS_SOURCE_ROOT}"
 
           pushd "${QS_SOURCE_ROOT}/Quicksilver"
-          ./Tools/qsrelease
+          ./Tools/qsrelease Debug
 
   template-plugin:
     runs-on: macos-latest
