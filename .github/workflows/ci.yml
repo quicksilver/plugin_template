@@ -36,7 +36,7 @@ jobs:
           python -m pip install --user cookiecutter
 
           pushd "$(mktemp -d)"
-          cookiecutter \
+          python -m cookiecutter \
             --no-input \
             "${OLDPWD}" \
             plugin_name=MyPlugin \
