@@ -1,0 +1,41 @@
+name: test-template
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-template:
+    runs-on: macos-latest
+    env:
+      QS_SOURCE_ROOT: /tmp/git/quicksilver
+      QS_DONT_TEST: 1
+      CONFIGURATION: Debug
+    steps:
+      - run: |
+          latest_tag=$(
+            git ls-remote --tags --refs --sort="-v:refname" https://github.com/quicksilver/quicksilver |
+              awk -F/ '{ print $NF; exit }'
+          )
+          mkdir -p "${QS_SOURCE_ROOT}"
+          git clone --recurse-submodules --branch="${latest_tag}" --depth=1 https://github.com/quicksilver/Quicksilver.git "${QS_SOURCE_ROOT}"
+
+          pushd "${QS_SOURCE_ROOT}/Quicksilver"
+          ./Tools/qsrelease "${CONFIGURATION}"
+      - uses: actions/checkout@v4
+      - run: |
+          python -m pip install --user cookiecutter
+
+          template_dir=$PWD
+          pushd "$(mktemp -d)"
+          python -m cookiecutter \
+            --no-input \
+            "${template_dir}" \
+            plugin_name=QSMyPlugin \
+            author="Nathan Henrie" \
+            description="test plugin for CI"
+
+          pushd QSMyPlugin
+
+          xcodebuild -scheme QSMyPlugin build
+          xcodebuild -scheme QSMyPlugin test
