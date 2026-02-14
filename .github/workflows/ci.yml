@@ -45,8 +45,8 @@ jobs:
 
           pushd QSMyPlugin
 
-          ls -l /private/tmp/QS/Configuration/Debug.xcconfig
           ls -l /tmp/QS/Configuration/Debug.xcconfig
+          ls -l /private/tmp/QS/Configuration/Debug.xcconfig
 
           xcodebuild -scheme QSMyPlugin build
           xcodebuild -scheme QSMyPlugin test
