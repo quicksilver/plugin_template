@@ -237,8 +237,8 @@
 	<dict>
 		<key>QSActionProviders</key>
 		<dict>
-			<key>{{cookiecutter.plugin_name}}Action</key>
-			<string>{{cookiecutter.plugin_name}}Action</string>
+			<key>{{cookiecutter.plugin_name}}SwiftAction</key>
+			<string>{{cookiecutter.plugin_name}}.{{cookiecutter.plugin_name}}SwiftAction</string>
 		</dict>
 		<key>QSObjectHandlers</key>
 		<dict>
